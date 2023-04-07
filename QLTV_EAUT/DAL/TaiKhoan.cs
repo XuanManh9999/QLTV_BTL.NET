@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class TaiKhoan
+    public class TaiKhoan : Sach_Va_TaiKhoan
     {
         private string maTK;
         private string tenTK;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class Sach
+    public class Sach : Sach_Va_TaiKhoan
     {
         private string maSach;
         private string tenSach;
