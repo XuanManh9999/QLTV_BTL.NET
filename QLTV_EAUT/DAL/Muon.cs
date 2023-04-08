@@ -23,7 +23,7 @@ namespace DAL
         {
             this.maSV = maSV;
             this.maSach = maSach;
-            this.ngayMuon = ngayMuon;
+            this.ngayMuon = ngayMuon; 
         }
     }
 }

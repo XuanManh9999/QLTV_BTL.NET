@@ -52,14 +52,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bo_Sung_Thong_Tin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bo_Sung_Thong_Tin.Designer.cs">
+      <DependentUpon>Bo_Sung_Thong_Tin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_DangKY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DangKY.Designer.cs">
+      <DependentUpon>Form_DangKY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Dang_Nhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Dang_Nhap.Designer.cs">
+      <DependentUpon>Form_Dang_Nhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Bo_Sung_Thong_Tin.resx">
+      <DependentUpon>Bo_Sung_Thong_Tin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DangKY.resx">
+      <DependentUpon>Form_DangKY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Dang_Nhap.resx">
+      <DependentUpon>Form_Dang_Nhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -84,6 +111,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{b20ef970-24c1-4072-836e-d36d6a5d1614}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DAL\DAL.csproj">
       <Project>{da5aed68-0f3d-4c0e-9bff-6f4a9b6901c6}</Project>
       <Name>DAL</Name>

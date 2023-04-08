@@ -9,7 +9,7 @@ namespace DAL
 {
     public class CONNECT
     {
-        public SqlConnection chuoiKetNoi()
+        public static SqlConnection chuoiKetNoi()
         {
             string strCon = @"Data Source=DESKTOP-LNJ99RH\SQLEXPRESS;Initial Catalog=QUANLYTHUVIEN;Integrated Security=True";
             SqlConnection sqlCon = new SqlConnection(strCon);

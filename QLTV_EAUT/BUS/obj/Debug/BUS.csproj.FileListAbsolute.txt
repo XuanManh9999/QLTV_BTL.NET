@@ -1,0 +1,14 @@
+D:\QLTVEAUT\QLTV_EAUT\BUS\bin\Debug\BUS.exe.config
+D:\QLTVEAUT\QLTV_EAUT\BUS\bin\Debug\BUS.exe
+D:\QLTVEAUT\QLTV_EAUT\BUS\bin\Debug\BUS.pdb
+D:\QLTVEAUT\QLTV_EAUT\BUS\bin\Debug\DAL.exe
+D:\QLTVEAUT\QLTV_EAUT\BUS\bin\Debug\DAL.pdb
+D:\QLTVEAUT\QLTV_EAUT\BUS\bin\Debug\DAL.exe.config
+D:\QLTVEAUT\QLTV_EAUT\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+D:\QLTVEAUT\QLTV_EAUT\BUS\obj\Debug\BUS.csproj.SuggestedBindingRedirects.cache
+D:\QLTVEAUT\QLTV_EAUT\BUS\obj\Debug\BUS.Properties.Resources.resources
+D:\QLTVEAUT\QLTV_EAUT\BUS\obj\Debug\BUS.csproj.GenerateResource.cache
+D:\QLTVEAUT\QLTV_EAUT\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\QLTVEAUT\QLTV_EAUT\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\QLTVEAUT\QLTV_EAUT\BUS\obj\Debug\BUS.exe
+D:\QLTVEAUT\QLTV_EAUT\BUS\obj\Debug\BUS.pdb

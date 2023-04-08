@@ -1,0 +1,10 @@
+D:\QLTVEAUT\QLTV_EAUT\DAL\bin\Debug\DAL.exe.config
+D:\QLTVEAUT\QLTV_EAUT\DAL\bin\Debug\DAL.exe
+D:\QLTVEAUT\QLTV_EAUT\DAL\bin\Debug\DAL.pdb
+D:\QLTVEAUT\QLTV_EAUT\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\QLTVEAUT\QLTV_EAUT\DAL\obj\Debug\DAL.csproj.SuggestedBindingRedirects.cache
+D:\QLTVEAUT\QLTV_EAUT\DAL\obj\Debug\DAL.Properties.Resources.resources
+D:\QLTVEAUT\QLTV_EAUT\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+D:\QLTVEAUT\QLTV_EAUT\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\QLTVEAUT\QLTV_EAUT\DAL\obj\Debug\DAL.exe
+D:\QLTVEAUT\QLTV_EAUT\DAL\obj\Debug\DAL.pdb
