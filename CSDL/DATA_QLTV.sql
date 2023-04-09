@@ -48,4 +48,26 @@ select MATK from TAIKHOAN
 insert into TAIKHOAN values ('TK002', 'Nguyễn Xuân Mạnh', '', '')
 select * from SINHVIEN
 INSERT INTO SINHVIEN VALUES('SV001', N'NGUYỄN XUÂN MANH', '29/03/2003', N'BA VÌ HÀ NỘI', '0352593455', 'DCCNTT12.10.3', 10.5);
+select MATKHAU from TAIKHOAN where MASV = 20210794
+--Thêm Sách
+insert into SACH values('MS001', N'Đắc Nhân Tâm', 150000, N'Phát Triển Cá Nhân')
+insert into SACH values('MS002', N'Bí Mật Tư Duy Triệu Phú', 120000, N'Phát Triển Cá Nhân')
+insert into SACH values('MS004', N'Đừng Bao Giờ Đi Ăn Một Mình', 125000, N'Phát Triển Cá Nhân')
+insert into SACH values('MS003', N'Lập Trình C, C++', 100000, N'Lập Trình')
+insert into SACH values('MS006', N'Lập Trình Java', 100000, N'Lập Trình')
+insert into SACH values('MS005', N'Lập Trình Python', 100000, N'Lập Trình')
+select * from SACH where LOAISACH = N'Phát Triển Cá Nhân'
+select DISTINCT LOAISACH from SACH 
+select * from MUON
+select * from SACH
+select * from SACH where TENSACH like '%  Ca %'
 select * from TAIKHOAN
+select * from MUON
+--Nhập Mượn
+insert into MUON values ('20210794', 'MS001', '20033920')
+select SACH.MASACH, TENSACH, SOTIEN, LOAISACH, NGAYMUON, MASV from SACH, MUON where SACH.MASACH = MUON.MASACH and MUON.MASV = (select MASV from TAIKHOAN where TAIKHOAN.TENTK = 'XuanManh9999')
+select * from MUON
+delete from MUON where MASV = '20210794' and MASACH = 'ms001'
+select MASV, TENSV, TIEN from SINHVIEN where MASV = '20210794'
+update SINHVIEN set TIEN = 10000000 where MASV = '20210794'
+update SINHVIEN set TIEN -= 1000 where MASV = '20210794'

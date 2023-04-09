@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.btnQuenMatKhau = new Guna.UI2.WinForms.Guna2Button();
             this.btnDangKy = new Guna.UI2.WinForms.Guna2Button();
             this.btnDangNhap = new Guna.UI2.WinForms.Guna2Button();
             this.txtMatKhau = new System.Windows.Forms.TextBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtTenTaiKhoan = new System.Windows.Forms.TextBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2GroupBox1
             // 
             this.guna2GroupBox1.BorderRadius = 30;
-            this.guna2GroupBox1.Controls.Add(this.guna2Button1);
+            this.guna2GroupBox1.Controls.Add(this.btnQuenMatKhau);
             this.guna2GroupBox1.Controls.Add(this.btnDangKy);
             this.guna2GroupBox1.Controls.Add(this.btnDangNhap);
             this.guna2GroupBox1.Controls.Add(this.txtMatKhau);
@@ -57,6 +57,30 @@
             this.guna2GroupBox1.TabIndex = 0;
             this.guna2GroupBox1.Text = "Đăng Nhập";
             this.guna2GroupBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2GroupBox1.Click += new System.EventHandler(this.guna2GroupBox1_Click);
+            // 
+            // btnQuenMatKhau
+            // 
+            this.btnQuenMatKhau.BorderRadius = 10;
+            this.btnQuenMatKhau.BorderThickness = 1;
+            this.btnQuenMatKhau.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnQuenMatKhau.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnQuenMatKhau.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnQuenMatKhau.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnQuenMatKhau.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnQuenMatKhau.FillColor = System.Drawing.Color.White;
+            this.btnQuenMatKhau.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.btnQuenMatKhau.ForeColor = System.Drawing.Color.Black;
+            this.btnQuenMatKhau.HoverState.BorderColor = System.Drawing.Color.White;
+            this.btnQuenMatKhau.HoverState.FillColor = System.Drawing.Color.Crimson;
+            this.btnQuenMatKhau.HoverState.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuenMatKhau.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnQuenMatKhau.Location = new System.Drawing.Point(246, 478);
+            this.btnQuenMatKhau.Name = "btnQuenMatKhau";
+            this.btnQuenMatKhau.Size = new System.Drawing.Size(214, 45);
+            this.btnQuenMatKhau.TabIndex = 8;
+            this.btnQuenMatKhau.Text = "Quên Mật Khẩu";
+            this.btnQuenMatKhau.Click += new System.EventHandler(this.btnQuenMatKhau_Click);
             // 
             // btnDangKy
             // 
@@ -129,6 +153,7 @@
             this.txtTenTaiKhoan.Name = "txtTenTaiKhoan";
             this.txtTenTaiKhoan.Size = new System.Drawing.Size(428, 30);
             this.txtTenTaiKhoan.TabIndex = 3;
+            this.txtTenTaiKhoan.TextChanged += new System.EventHandler(this.txtTenTaiKhoan_TextChanged);
             // 
             // guna2HtmlLabel2
             // 
@@ -139,28 +164,6 @@
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(177, 31);
             this.guna2HtmlLabel2.TabIndex = 2;
             this.guna2HtmlLabel2.Text = "Tên Tài Khoản:";
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.BorderThickness = 1;
-            this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.White;
-            this.guna2Button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.HoverState.BorderColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.Crimson;
-            this.guna2Button1.HoverState.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(246, 478);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(214, 45);
-            this.guna2Button1.TabIndex = 8;
-            this.guna2Button1.Text = "Quên Mật Khẩu";
             // 
             // Form_Dang_Nhap
             // 
@@ -189,6 +192,6 @@
         private System.Windows.Forms.TextBox txtTenTaiKhoan;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2Button btnDangKy;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnQuenMatKhau;
     }
 }

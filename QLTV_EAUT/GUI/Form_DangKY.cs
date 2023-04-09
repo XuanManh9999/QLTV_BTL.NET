@@ -55,5 +55,15 @@ namespace GUI
             }
 
         }
+
+        private void pickClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void txtTenTaiKhoan_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

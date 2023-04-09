@@ -37,7 +37,9 @@
             this.btnDangKy = new Guna.UI2.WinForms.Guna2Button();
             this.txtMatKhau = new System.Windows.Forms.TextBox();
             this.txtTenTaiKhoan = new System.Windows.Forms.TextBox();
+            this.pickClose = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pickClose)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2GroupBox1
@@ -152,12 +154,28 @@
             this.txtTenTaiKhoan.Name = "txtTenTaiKhoan";
             this.txtTenTaiKhoan.Size = new System.Drawing.Size(428, 39);
             this.txtTenTaiKhoan.TabIndex = 3;
+            this.txtTenTaiKhoan.TextChanged += new System.EventHandler(this.txtTenTaiKhoan_TextChanged);
+            // 
+            // pickClose
+            // 
+            this.pickClose.BorderRadius = 20;
+            this.pickClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pickClose.Image = global::GUI.Properties.Resources.Back_2_2_icon__1_;
+            this.pickClose.ImageRotate = 0F;
+            this.pickClose.Location = new System.Drawing.Point(3, 12);
+            this.pickClose.Name = "pickClose";
+            this.pickClose.Size = new System.Drawing.Size(71, 74);
+            this.pickClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pickClose.TabIndex = 15;
+            this.pickClose.TabStop = false;
+            this.pickClose.Click += new System.EventHandler(this.pickClose_Click);
             // 
             // Form_DangKY
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 562);
+            this.Controls.Add(this.pickClose);
             this.Controls.Add(this.guna2GroupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -167,6 +185,7 @@
             this.Load += new System.EventHandler(this.Form_DangKY_Load);
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pickClose)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -182,5 +201,6 @@
         private System.Windows.Forms.TextBox txtMatKhau;
         private System.Windows.Forms.TextBox txtTenTaiKhoan;
         private Guna.UI2.WinForms.Guna2CheckBox checkBox;
+        private Guna.UI2.WinForms.Guna2PictureBox pickClose;
     }
 }

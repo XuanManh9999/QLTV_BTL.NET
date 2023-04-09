@@ -19,3 +19,9 @@ D:\QLTVEAUT\QLTV_EAUT\GUI\obj\Debug\GUI.Bo_Sung_Thong_Tin.resources
 D:\QLTVEAUT\QLTV_EAUT\GUI\bin\Debug\BUS.exe
 D:\QLTVEAUT\QLTV_EAUT\GUI\bin\Debug\BUS.pdb
 D:\QLTVEAUT\QLTV_EAUT\GUI\bin\Debug\BUS.exe.config
+D:\QLTVEAUT\QLTV_EAUT\GUI\obj\Debug\GUI.Form_Lay_mat_Khau.resources
+D:\QLTVEAUT\QLTV_EAUT\GUI\obj\Debug\GUI.Form_Trang_Chu.resources
+D:\QLTVEAUT\QLTV_EAUT\GUI\obj\Debug\GUI.FormSACH.resources
+D:\QLTVEAUT\QLTV_EAUT\GUI\obj\Debug\GUI.Gio_Sach.resources
+D:\QLTVEAUT\QLTV_EAUT\GUI\obj\Debug\GUI.Form_Mua_Sach.resources
+D:\QLTVEAUT\QLTV_EAUT\GUI\obj\Debug\GUI.Form_Quan_LyTV.resources

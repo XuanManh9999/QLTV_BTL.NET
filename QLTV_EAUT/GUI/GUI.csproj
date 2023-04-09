@@ -64,6 +64,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSACH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSACH.Designer.cs">
+      <DependentUpon>FormSACH.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_DangKY.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,16 +82,64 @@
     <Compile Include="Form_Dang_Nhap.Designer.cs">
       <DependentUpon>Form_Dang_Nhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_Lay_mat_Khau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Lay_mat_Khau.Designer.cs">
+      <DependentUpon>Form_Lay_mat_Khau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Mua_Sach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Mua_Sach.Designer.cs">
+      <DependentUpon>Form_Mua_Sach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Quan_LyTV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Quan_LyTV.Designer.cs">
+      <DependentUpon>Form_Quan_LyTV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Trang_Chu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Trang_Chu.Designer.cs">
+      <DependentUpon>Form_Trang_Chu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gio_Sach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gio_Sach.Designer.cs">
+      <DependentUpon>Gio_Sach.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Bo_Sung_Thong_Tin.resx">
       <DependentUpon>Bo_Sung_Thong_Tin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSACH.resx">
+      <DependentUpon>FormSACH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_DangKY.resx">
       <DependentUpon>Form_DangKY.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Dang_Nhap.resx">
       <DependentUpon>Form_Dang_Nhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Lay_mat_Khau.resx">
+      <DependentUpon>Form_Lay_mat_Khau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Mua_Sach.resx">
+      <DependentUpon>Form_Mua_Sach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Quan_LyTV.resx">
+      <DependentUpon>Form_Quan_LyTV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Trang_Chu.resx">
+      <DependentUpon>Form_Trang_Chu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gio_Sach.resx">
+      <DependentUpon>Gio_Sach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -95,6 +149,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -119,6 +174,9 @@
       <Project>{da5aed68-0f3d-4c0e-9bff-6f4a9b6901c6}</Project>
       <Name>DAL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back-2-2-icon %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

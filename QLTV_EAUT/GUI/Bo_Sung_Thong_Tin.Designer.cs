@@ -42,7 +42,9 @@
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.pickClose = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pickClose)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2GroupBox1
@@ -63,12 +65,13 @@
             this.guna2GroupBox1.Controls.Add(this.guna2HtmlLabel1);
             this.guna2GroupBox1.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(48, 33);
+            this.guna2GroupBox1.Location = new System.Drawing.Point(65, 37);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.Size = new System.Drawing.Size(972, 500);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(959, 500);
             this.guna2GroupBox1.TabIndex = 0;
             this.guna2GroupBox1.Text = "Thông Tin Người Dùng";
             this.guna2GroupBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2GroupBox1.Click += new System.EventHandler(this.guna2GroupBox1_Click);
             // 
             // btnCapNhat
             // 
@@ -98,6 +101,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(618, 33);
             this.dateTimePicker1.TabIndex = 12;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // txtLop
             // 
@@ -271,11 +275,26 @@
             this.guna2HtmlLabel1.TabIndex = 0;
             this.guna2HtmlLabel1.Text = "Nhập Mã Sinh Viên:";
             // 
+            // pickClose
+            // 
+            this.pickClose.BorderRadius = 20;
+            this.pickClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pickClose.Image = global::GUI.Properties.Resources.Back_2_2_icon__1_;
+            this.pickClose.ImageRotate = 0F;
+            this.pickClose.Location = new System.Drawing.Point(4, 37);
+            this.pickClose.Name = "pickClose";
+            this.pickClose.Size = new System.Drawing.Size(55, 57);
+            this.pickClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pickClose.TabIndex = 2;
+            this.pickClose.TabStop = false;
+            this.pickClose.Click += new System.EventHandler(this.pickClose_Click);
+            // 
             // Bo_Sung_Thong_Tin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 562);
+            this.Controls.Add(this.pickClose);
             this.Controls.Add(this.guna2GroupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -285,6 +304,7 @@
             this.Load += new System.EventHandler(this.Bo_Sung_Thong_Tin_Load);
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pickClose)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -305,5 +325,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtTenSinhVien;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private Guna.UI2.WinForms.Guna2Button btnCapNhat;
+        private Guna.UI2.WinForms.Guna2PictureBox pickClose;
     }
 }
