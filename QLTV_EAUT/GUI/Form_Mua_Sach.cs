@@ -16,18 +16,17 @@ namespace GUI
     public partial class Form_Mua_Sach : Form
     {
         public string masv;
-        public string tenSach;
-        public double gia;
+        public string tenTk;
+        public double gia = 0;
         public Form_Mua_Sach()
         {
             InitializeComponent();
         }
-        public Form_Mua_Sach(string masv, string tenSach, double gia)
+        public Form_Mua_Sach(string masv, string tenTk)
         {
             InitializeComponent();
             this.masv = masv;
-            this.tenSach = tenSach;
-            this.gia = gia;
+            this.tenTk = tenTk;
         }
         private void guna2GroupBox1_Click(object sender, EventArgs e)
         {
@@ -35,8 +34,6 @@ namespace GUI
         }
         public void HienThi()
         {
-            lblTenSach.Text = tenSach;
-            lblGiaSach.Text = gia.ToString() + " VNĐ";
             SqlCommand sqlCMD = new SqlCommand();
             sqlCMD.CommandType = CommandType.Text;
             sqlCMD.CommandText = $"select TENSV, TIEN from SINHVIEN where MASV = '{masv}'";
@@ -53,6 +50,21 @@ namespace GUI
         private void Form_Mua_Sach_Load(object sender, EventArgs e)
         {
             HienThi();
+            SqlCommand sqlCMD = new SqlCommand();
+            sqlCMD.CommandType = CommandType.Text;
+            sqlCMD.CommandText = $"select TENSACH, SOTIEN from SACH, MUON where SACH.MASACH = MUON.MASACH and MUON.MASV = (select MASV from TAIKHOAN where TAIKHOAN.TENTK = '{tenTk}')";
+            sqlCMD.Connection = CONNECT.chuoiKetNoi();
+            SqlDataReader reader = sqlCMD.ExecuteReader();
+            string s = "";
+            while (reader.Read())
+            {
+                s += $"| {reader.GetString(0)} |";
+                gia += reader.GetDouble(1);
+            }
+            lblTenSach.Text = s;
+            lblGiaSach.Text = gia.ToString();
+            reader.Close();
+
         }
 
         private void guna2HtmlLabel5_Click(object sender, EventArgs e)

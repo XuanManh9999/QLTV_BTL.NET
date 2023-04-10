@@ -89,7 +89,7 @@ namespace GUI
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            Form_Mua_Sach muaSach = new Form_Mua_Sach(maSV, tenSach, gia);
+            Form_Mua_Sach muaSach = new Form_Mua_Sach(maSV, tenTK);
             muaSach.ShowDialog();   
         }
     }

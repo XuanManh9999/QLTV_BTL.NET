@@ -42,7 +42,6 @@ CREATE TABLE QLTK (
 	MATK VARCHAR(20) FOREIGN KEY REFERENCES TAIKHOAN(MATK),
 	MAQL VARCHAR (20) FOREIGN KEY REFERENCES QUANLY(MAQL)
 )
-select * from SINHVIEN
 -----------------------------------------------------------ĐOẠN TRUY VẤN--------------------------------------------------
 select MATK from TAIKHOAN
 insert into TAIKHOAN values ('TK002', 'Nguyễn Xuân Mạnh', '', '')
@@ -71,3 +70,5 @@ delete from MUON where MASV = '20210794' and MASACH = 'ms001'
 select MASV, TENSV, TIEN from SINHVIEN where MASV = '20210794'
 update SINHVIEN set TIEN = 10000000 where MASV = '20210794'
 update SINHVIEN set TIEN -= 1000 where MASV = '20210794'
+select * from SACH, MUON, SINHVIEN where MUON.MASV = SINHVIEN.MASV and MUON.MASV = '20210794'
+select TENSACH, SOTIEN from SACH, MUON where SACH.MASACH = MUON.MASACH and MUON.MASV = (select MASV from TAIKHOAN where TAIKHOAN.TENTK = 'XuanManh9999')
