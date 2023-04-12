@@ -21,16 +21,18 @@ namespace DAL
     {
         private string _maSV;
         private string _lop;
-        private float _tien;
+        private double _tien;
         public string MaSV { get => _maSV; set => _maSV = value; }
         public string Lop { get => _lop; set => _lop = value; }
-        public float Tien { get => _tien; set => _tien = value; }
+        public double Tien { get => _tien; set => _tien = value; }
 
         public SinhVien() { 
         
         }
-        public SinhVien(string maSV, string hoten, string ngaySinh, string diaChi, string soDienThoai, string lop, float tien) : base(hoten, ngaySinh, diaChi, soDienThoai){
-        
+        public SinhVien(string maSV, string hoten, string ngaySinh, string diaChi, string soDienThoai, string lop, double tien) : base(hoten, ngaySinh, diaChi, soDienThoai){
+            this.MaSV = maSV;
+            this.Lop = lop;
+            this.Tien = tien;
         }
         public bool dangNhap(TaiKhoan taiKhoan) {
             List<string> tenTK = new List<string>();

@@ -30,10 +30,8 @@ namespace GUI
 
         private void Form_Trang_Chu_Load(object sender, EventArgs e)
         {
+            
         }
-
-     
-
         private void btnThemSachMuon_Click(object sender, EventArgs e)
         {
             Gio_Sach gio_Sach = new Gio_Sach(s);

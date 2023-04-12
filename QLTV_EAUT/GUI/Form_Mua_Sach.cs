@@ -62,7 +62,7 @@ namespace GUI
                 gia += reader.GetDouble(1);
             }
             lblTenSach.Text = s;
-            lblGiaSach.Text = gia.ToString();
+            lblGiaSach.Text = gia.ToString() + " VNĐ";
             reader.Close();
 
         }
@@ -100,6 +100,11 @@ namespace GUI
                     MessageBoxIcon.Error);
             }
             
+        }
+
+        private void lblGiaSach_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -19,16 +19,16 @@ namespace DAL
         public string ngaySinh { get; set; }
         public string diaChi { get; set; }
         public string soDienThoai { get; set; }
-        public Person ()
+        public Person(string hoTen, string ngaySinh, string diaChi, string soDienThoai)
         {
-
-        }
-        public Person(string hoten, string ngaySinh, string diaChi, string soDienThoai)
-        {
-            this.hoTen = hoTen;
             this.ngaySinh = ngaySinh;
             this.diaChi = diaChi;
             this.soDienThoai = soDienThoai;
+            this.hoTen = hoTen;
+        }
+        public Person ()
+        {
+
         }
     }
 }

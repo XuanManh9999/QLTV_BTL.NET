@@ -83,7 +83,7 @@ namespace GUI
                 MessageBox.Show("Trả Sách Thành Công!");
             }else
             {
-                MessageBox.Show("Trả Sách Không Thành Công");
+                MessageBox.Show("Bạn Phải Chọn Sách Cần Trả Để Có Thể Trả Sách");
             }
         }
 

@@ -50,8 +50,20 @@
     <Compile Include="Bus_Mua_Sach.cs" />
     <Compile Include="bus_Quen_MK.cs" />
     <Compile Include="Bus_Sinh_Vien_Dang_Nhap.cs" />
+    <Compile Include="Bus_Sua_Sach.cs" />
+    <Compile Include="Bus_Sua_Sinh_Vien.cs" />
+    <Compile Include="bus_sua_Tai_khoan.cs" />
+    <Compile Include="Bus_ThemSach.cs" />
+    <Compile Include="bus_Them_SV.cs" />
+    <Compile Include="bus_them_tai_Khoan.cs" />
+    <Compile Include="bus_TimKiemTaiKhoan.cs" />
+    <Compile Include="bus_Tim_Kiem.cs" />
+    <Compile Include="Bus_Tim_Kiem_Sach.cs" />
     <Compile Include="bus_Tim_Sach.cs" />
     <Compile Include="bus_Tra_Sach.cs" />
+    <Compile Include="Bus_Xoa_Sach.cs" />
+    <Compile Include="Bus_Xoa_Sinh_Vien.cs" />
+    <Compile Include="bus_Xoa_TaiKhoan.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

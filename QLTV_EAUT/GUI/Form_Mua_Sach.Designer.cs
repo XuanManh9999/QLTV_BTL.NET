@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.btnThanhToan = new Guna.UI2.WinForms.Guna2Button();
-            this.txtNhanHang = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblThongTin = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtSoDienThoai = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblTenSach = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblGiaSach = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTenSach = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtSoDienThoai = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblThongTin = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtNhanHang = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnThanhToan = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,67 +64,43 @@
             this.guna2GroupBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.guna2GroupBox1.Click += new System.EventHandler(this.guna2GroupBox1_Click);
             // 
-            // btnThanhToan
+            // lblGiaSach
             // 
-            this.btnThanhToan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnThanhToan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnThanhToan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnThanhToan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnThanhToan.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnThanhToan.ForeColor = System.Drawing.Color.White;
-            this.btnThanhToan.Location = new System.Drawing.Point(47, 432);
-            this.btnThanhToan.Name = "btnThanhToan";
-            this.btnThanhToan.Size = new System.Drawing.Size(887, 45);
-            this.btnThanhToan.TabIndex = 0;
-            this.btnThanhToan.Text = "Thanh Toán";
-            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
+            this.lblGiaSach.BackColor = System.Drawing.Color.Transparent;
+            this.lblGiaSach.Location = new System.Drawing.Point(199, 372);
+            this.lblGiaSach.Name = "lblGiaSach";
+            this.lblGiaSach.Size = new System.Drawing.Size(109, 22);
+            this.lblGiaSach.TabIndex = 9;
+            this.lblGiaSach.Text = "Load Giá Sách";
+            this.lblGiaSach.Click += new System.EventHandler(this.lblGiaSach_Click);
             // 
-            // txtNhanHang
+            // guna2HtmlLabel6
             // 
-            this.txtNhanHang.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNhanHang.DefaultText = "";
-            this.txtNhanHang.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtNhanHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtNhanHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNhanHang.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNhanHang.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNhanHang.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtNhanHang.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNhanHang.Location = new System.Drawing.Point(275, 122);
-            this.txtNhanHang.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtNhanHang.Name = "txtNhanHang";
-            this.txtNhanHang.PasswordChar = '\0';
-            this.txtNhanHang.PlaceholderText = "";
-            this.txtNhanHang.SelectedText = "";
-            this.txtNhanHang.Size = new System.Drawing.Size(659, 45);
-            this.txtNhanHang.TabIndex = 1;
+            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(47, 372);
+            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(69, 22);
+            this.guna2HtmlLabel6.TabIndex = 8;
+            this.guna2HtmlLabel6.Text = "Giá Sách";
             // 
-            // guna2HtmlLabel1
+            // lblTenSach
             // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(47, 140);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(158, 27);
-            this.guna2HtmlLabel1.TabIndex = 2;
-            this.guna2HtmlLabel1.Text = "Nhập Địa Chỉ Nhận:";
+            this.lblTenSach.BackColor = System.Drawing.Color.Transparent;
+            this.lblTenSach.Location = new System.Drawing.Point(196, 308);
+            this.lblTenSach.Name = "lblTenSach";
+            this.lblTenSach.Size = new System.Drawing.Size(111, 22);
+            this.lblTenSach.TabIndex = 7;
+            this.lblTenSach.Text = "Load Tên Sách";
+            this.lblTenSach.Click += new System.EventHandler(this.guna2HtmlLabel5_Click);
             // 
-            // lblThongTin
+            // guna2HtmlLabel4
             // 
-            this.lblThongTin.BackColor = System.Drawing.Color.Transparent;
-            this.lblThongTin.Location = new System.Drawing.Point(47, 61);
-            this.lblThongTin.Name = "lblThongTin";
-            this.lblThongTin.Size = new System.Drawing.Size(126, 27);
-            this.lblThongTin.TabIndex = 3;
-            this.lblThongTin.Text = "Load Thông Tin";
-            // 
-            // guna2HtmlLabel3
-            // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(47, 224);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(165, 27);
-            this.guna2HtmlLabel3.TabIndex = 4;
-            this.guna2HtmlLabel3.Text = "Nhập Số Điện Thoại:";
+            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(42, 308);
+            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(75, 22);
+            this.guna2HtmlLabel4.TabIndex = 6;
+            this.guna2HtmlLabel4.Text = "Tên Sách:";
             // 
             // txtSoDienThoai
             // 
@@ -146,42 +122,67 @@
             this.txtSoDienThoai.Size = new System.Drawing.Size(659, 45);
             this.txtSoDienThoai.TabIndex = 5;
             // 
-            // guna2HtmlLabel4
+            // guna2HtmlLabel3
             // 
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(42, 308);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(77, 27);
-            this.guna2HtmlLabel4.TabIndex = 6;
-            this.guna2HtmlLabel4.Text = "Tên Sách:";
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(47, 224);
+            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(149, 22);
+            this.guna2HtmlLabel3.TabIndex = 4;
+            this.guna2HtmlLabel3.Text = "Nhập Số Điện Thoại:";
             // 
-            // lblTenSach
+            // lblThongTin
             // 
-            this.lblTenSach.BackColor = System.Drawing.Color.Transparent;
-            this.lblTenSach.Location = new System.Drawing.Point(196, 308);
-            this.lblTenSach.Name = "lblTenSach";
-            this.lblTenSach.Size = new System.Drawing.Size(117, 27);
-            this.lblTenSach.TabIndex = 7;
-            this.lblTenSach.Text = "Load Tên Sách";
-            this.lblTenSach.Click += new System.EventHandler(this.guna2HtmlLabel5_Click);
+            this.lblThongTin.BackColor = System.Drawing.Color.Transparent;
+            this.lblThongTin.Location = new System.Drawing.Point(47, 61);
+            this.lblThongTin.Name = "lblThongTin";
+            this.lblThongTin.Size = new System.Drawing.Size(113, 22);
+            this.lblThongTin.TabIndex = 3;
+            this.lblThongTin.Text = "Load Thông Tin";
             // 
-            // guna2HtmlLabel6
+            // guna2HtmlLabel1
             // 
-            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(47, 372);
-            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(70, 27);
-            this.guna2HtmlLabel6.TabIndex = 8;
-            this.guna2HtmlLabel6.Text = "Giá Sách";
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(47, 140);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(142, 22);
+            this.guna2HtmlLabel1.TabIndex = 2;
+            this.guna2HtmlLabel1.Text = "Nhập Địa Chỉ Nhận:";
             // 
-            // lblGiaSach
+            // txtNhanHang
             // 
-            this.lblGiaSach.BackColor = System.Drawing.Color.Transparent;
-            this.lblGiaSach.Location = new System.Drawing.Point(199, 372);
-            this.lblGiaSach.Name = "lblGiaSach";
-            this.lblGiaSach.Size = new System.Drawing.Size(114, 27);
-            this.lblGiaSach.TabIndex = 9;
-            this.lblGiaSach.Text = "Load Giá Sách";
+            this.txtNhanHang.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNhanHang.DefaultText = "";
+            this.txtNhanHang.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNhanHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNhanHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNhanHang.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNhanHang.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNhanHang.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNhanHang.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNhanHang.Location = new System.Drawing.Point(275, 122);
+            this.txtNhanHang.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtNhanHang.Name = "txtNhanHang";
+            this.txtNhanHang.PasswordChar = '\0';
+            this.txtNhanHang.PlaceholderText = "";
+            this.txtNhanHang.SelectedText = "";
+            this.txtNhanHang.Size = new System.Drawing.Size(659, 45);
+            this.txtNhanHang.TabIndex = 1;
+            // 
+            // btnThanhToan
+            // 
+            this.btnThanhToan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnThanhToan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnThanhToan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnThanhToan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnThanhToan.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnThanhToan.ForeColor = System.Drawing.Color.White;
+            this.btnThanhToan.Location = new System.Drawing.Point(47, 432);
+            this.btnThanhToan.Name = "btnThanhToan";
+            this.btnThanhToan.Size = new System.Drawing.Size(887, 45);
+            this.btnThanhToan.TabIndex = 0;
+            this.btnThanhToan.Text = "Thanh Toán";
+            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
             // Form_Mua_Sach
             // 
@@ -190,7 +191,7 @@
             this.ClientSize = new System.Drawing.Size(1067, 562);
             this.Controls.Add(this.guna2GroupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_Mua_Sach";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Mua_Sach";
