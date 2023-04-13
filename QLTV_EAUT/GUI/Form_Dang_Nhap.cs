@@ -39,7 +39,7 @@ namespace GUI
                 if (sinhVien.dang_Nhap_Bus(taiKhoan))
                 {
                     MessageBox.Show("Đăng Nhập Thành Công");
-                    Form_Trang_Chu trangChuNguoiDung = new Form_Trang_Chu(txtTenTaiKhoan.Text.ToString());
+                    Form_Trang_Chu trangChuNguoiDung = new Form_Trang_Chu(txtTenTaiKhoan.Text);
                     this.Hide();
                     trangChuNguoiDung.ShowDialog();
                 }

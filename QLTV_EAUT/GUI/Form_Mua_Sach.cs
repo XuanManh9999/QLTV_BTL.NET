@@ -109,7 +109,7 @@ namespace GUI
 
         private void pickClose_Click(object sender, EventArgs e)
         {
-            Gio_Sach gioSach = new Gio_Sach();
+            Gio_Sach gioSach = new Gio_Sach(tenTk);
             this.Hide();
             gioSach.ShowDialog();
         }

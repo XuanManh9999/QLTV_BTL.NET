@@ -95,7 +95,7 @@ namespace GUI
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            Form_Trang_Chu trangChu = new Form_Trang_Chu();
+            Form_Trang_Chu trangChu = new Form_Trang_Chu(tenTK);
             this.Hide();
             trangChu.ShowDialog();
         }
