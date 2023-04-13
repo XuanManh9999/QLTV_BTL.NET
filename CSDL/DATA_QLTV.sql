@@ -1,4 +1,5 @@
-﻿CREATE DATABASE QUANLYTHUVIEN
+﻿--Khởi tạo databasse
+CREATE DATABASE QUANLYTHUVIEN
 USE QUANLYTHUVIEN
 CREATE TABLE QUANLY(
 	MAQL VARCHAR(20) PRIMARY KEY, TENQL NVARCHAR(50), NGAYSINH CHAR(20), DIACHI NVARCHAR(50), SDT CHAR(20)  
@@ -7,7 +8,7 @@ select * from QUANLY
 INSERT INTO QUANLY VALUES('QL001', N'TRẦN QUANG MINH', '29/09/2003', N'HÀ NỘI', '0352593469')
 CREATE TABLE SINHVIEN(
 	MASV VARCHAR(20) PRIMARY KEY, TENSV NVARCHAR(50), NGAYSINH CHAR(20), DIACHI NVARCHAR(50), SDT CHAR (10), LOP CHAR(20), TIEN float)
-INSERT INTO SINHVIEN VALUES('SV001', N'NGUYỄN XUÂN MANH', '29/03/2003', N'BA VÌ HÀ NỘI', '0352593455', 'DCCNTT12.10.3', 10.5);
+INSERT INTO SINHVIEN VALUES('SV001', N'abc', '29/03/2003', N'BA VÌ HÀ NỘI', '0352593455', 'DCCNTT12.10.3', 10.5);
 select * from SINHVIEN
 CREATE TABLE QLSV(
 	MAQL VARCHAR(20) FOREIGN KEY REFERENCES QUANLY(MAQL) ,
@@ -36,7 +37,7 @@ CREATE TABLE QLSACH (
 CREATE TABLE TAIKHOAN(
 	MATK VARCHAR(20) PRIMARY KEY, TENTK NVARCHAR(50), MATKHAU CHAR(20), MASV VARCHAR(20) FOREIGN KEY REFERENCES SINHVIEN(MASV) 
 )
-insert into TAIKHOAN values ('TK001', 'XUANMANH9999', '123', 'SV001')
+insert into TAIKHOAN values ('TK001', 'manh9999', '123', 'SV001')
 -- QLTK 
 CREATE TABLE QLTK (
 	MATK VARCHAR(20) FOREIGN KEY REFERENCES TAIKHOAN(MATK),
@@ -44,9 +45,9 @@ CREATE TABLE QLTK (
 )
 -----------------------------------------------------------ĐOẠN TRUY VẤN--------------------------------------------------
 select MATK from TAIKHOAN
-insert into TAIKHOAN values ('TK002', 'Nguyễn Xuân Mạnh', '', '')
+insert into TAIKHOAN values ('TK002', 'abc', '', '')
 select * from SINHVIEN
-INSERT INTO SINHVIEN VALUES('SV001', N'NGUYỄN XUÂN MANH', '29/03/2003', N'BA VÌ HÀ NỘI', '0352593455', 'DCCNTT12.10.3', 10.5);
+INSERT INTO SINHVIEN VALUES('SV001', N'abc', '29/03/2003', N'BA VÌ HÀ NỘI', '0352593455', 'DCCNTT12.10.3', 10.5);
 select MATKHAU from TAIKHOAN where MASV = 20210794
 --Thêm Sách
 insert into SACH values('MS001', N'Đắc Nhân Tâm', 150000, N'Phát Triển Cá Nhân')
@@ -56,24 +57,31 @@ insert into SACH values('MS003', N'Lập Trình C, C++', 100000, N'Lập Trình'
 insert into SACH values('MS006', N'Lập Trình Java', 100000, N'Lập Trình')
 insert into SACH values('MS005', N'Lập Trình Python', 100000, N'Lập Trình')
 select * from SACH where LOAISACH = N'Phát Triển Cá Nhân'
+--Truy vấn hiển thị sách
 select DISTINCT LOAISACH from SACH 
-select * from MUON
-select * from SACH
-select * from SACH where TENSACH like '%  Ca %'
-select * from TAIKHOAN
-select * from MUON
 --Nhập Mượn
 insert into MUON values ('20210794', 'MS001', '20033920')
+--Truy vấn hiển thị sách mượn
 select SACH.MASACH, TENSACH, SOTIEN, LOAISACH, NGAYMUON, MASV from SACH, MUON where SACH.MASACH = MUON.MASACH and MUON.MASV = (select MASV from TAIKHOAN where TAIKHOAN.TENTK = 'XuanManh9999')
 select * from MUON
+--Truy vấn xóa viên mượn sách
 delete from MUON where MASV = '20210794' and MASACH = 'ms001'
+--Truy Hiển thị thông tin sinh viên
 select MASV, TENSV, TIEN from SINHVIEN where MASV = '20210794'
+--Truy vấn cập nhật sinh viên
 update SINHVIEN set TIEN = 10000000 where MASV = '20210794'
 update SINHVIEN set TIEN -= 1000 where MASV = '20210794'
+--Truy vấn ra sinh viên mượn sách
 select * from SACH, MUON, SINHVIEN where MUON.MASV = SINHVIEN.MASV and MUON.MASV = '20210794'
-select TENSACH, SOTIEN from SACH, MUON where SACH.MASACH = MUON.MASACH and MUON.MASV = (select MASV from TAIKHOAN where TAIKHOAN.TENTK = 'XuanManh9999')
+--Truy vấn thực hiện sinh viên mượn sách
+select TENSACH, SOTIEN from SACH, MUON where SACH.MASACH = MUON.MASACH and MUON.MASV = (select MASV from TAIKHOAN where TAIKHOAN.TENTK = '..')
+--Truy vấn hiển thị tài khoản
 select * from TAIKHOAN
+--Truy vấn cập nhật tài khoản
 update TAIKHOAN set MATK = 'TK00537', TENTK = N'Manh', MATKHAU = '123', MASV = '20210858' where MATK = 'TK00537'
+--Truy vấn xóa tài khoản
 delete from TAIKHOAN where MATK = 'TK00537'
+--Truy Vấn  Tìm Kiếm Tài Khoản
 select * from TAIKHOAN where TENTK like '%d%' or MASV like '%1%'
+--Truy Vấn Thực Hiện Việc Báo Cáo
 select DISTINCT SINHVIEN.MASV, SINHVIEN.TENSV, SINHVIEN.SDT,  SINHVIEN.LOP, SACH.TENSACH, MUON.NGAYMUON from SINHVIEN, SACH, MUON where SINHVIEN.MASV = MUON.MASV and SACH.MASACH = MUON.MASACH
