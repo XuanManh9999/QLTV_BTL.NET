@@ -151,5 +151,12 @@ namespace GUI
                 MessageBox.Show("Sách Đã Có Trong Giỏ Sách. Vui lòng thêm cuốn khác", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void pickClose_Click(object sender, EventArgs e)
+        {
+            Form_Trang_Chu trangChu = new Form_Trang_Chu();
+            this.Hide();
+            trangChu.ShowDialog();
+        }
     }
 }

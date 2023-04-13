@@ -106,5 +106,12 @@ namespace GUI
         {
 
         }
+
+        private void pickClose_Click(object sender, EventArgs e)
+        {
+            Gio_Sach gioSach = new Gio_Sach();
+            this.Hide();
+            gioSach.ShowDialog();
+        }
     }
 }

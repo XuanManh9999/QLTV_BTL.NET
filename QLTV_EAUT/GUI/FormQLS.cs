@@ -147,5 +147,12 @@ namespace GUI
                 busTiemSach.bus_tim_kiem_Sach(x);
             }
         }
+
+        private void pickClose_Click(object sender, EventArgs e)
+        {
+            Form_Quan_LyTV form_Quan_LyTV = new Form_Quan_LyTV();
+            this.Hide();
+            form_Quan_LyTV.ShowDialog();
+        }
     }
 }

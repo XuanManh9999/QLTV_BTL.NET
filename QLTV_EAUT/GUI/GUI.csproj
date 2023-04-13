@@ -71,12 +71,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DSBao_Cao_Sinh_Vien_Muon_Sach.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormQLS.cs">
       <SubType>Form</SubType>
     </Compile>

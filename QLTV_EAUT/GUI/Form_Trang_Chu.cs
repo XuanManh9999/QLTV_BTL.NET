@@ -38,5 +38,15 @@ namespace GUI
             gio_Sach.ShowDialog();
 
         }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn Có Chắc Chắn Muốn Thoát Không", "Thống Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes) {
+                 Form_Dang_Nhap form_Dang_Nhap = new Form_Dang_Nhap();
+                 this.Hide();
+                form_Dang_Nhap.ShowDialog();
+            }
+        }
     }
 }

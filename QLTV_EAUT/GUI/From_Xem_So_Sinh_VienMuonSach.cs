@@ -58,5 +58,12 @@ namespace GUI
             f.crystalReportViewer1.ReportSource = baoCaoSVMuonSach;
             f.ShowDialog();
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            Form_Quan_LyTV form_Quan_LyTV = new Form_Quan_LyTV();
+            this.Hide();
+            form_Quan_LyTV.ShowDialog();
+        }
     }
 }

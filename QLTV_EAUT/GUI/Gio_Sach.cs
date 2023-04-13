@@ -92,5 +92,12 @@ namespace GUI
             Form_Mua_Sach muaSach = new Form_Mua_Sach(maSV, tenTK);
             muaSach.ShowDialog();   
         }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            Form_Trang_Chu trangChu = new Form_Trang_Chu();
+            this.Hide();
+            trangChu.ShowDialog();
+        }
     }
 }

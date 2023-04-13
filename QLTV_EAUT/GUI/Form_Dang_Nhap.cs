@@ -40,6 +40,7 @@ namespace GUI
                 {
                     MessageBox.Show("Đăng Nhập Thành Công");
                     Form_Trang_Chu trangChuNguoiDung = new Form_Trang_Chu(txtTenTaiKhoan.Text.ToString());
+                    this.Hide();
                     trangChuNguoiDung.ShowDialog();
                 }
                 else

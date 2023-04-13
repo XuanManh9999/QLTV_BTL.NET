@@ -50,12 +50,16 @@
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.pickClose = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GroupBox1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pickClose)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2GroupBox1
             // 
+            this.guna2GroupBox1.BackColor = System.Drawing.Color.White;
+            this.guna2GroupBox1.Controls.Add(this.pickClose);
             this.guna2GroupBox1.Controls.Add(this.txtTiemKiem);
             this.guna2GroupBox1.Controls.Add(this.btnTimKiem);
             this.guna2GroupBox1.Controls.Add(this.btnXoa);
@@ -69,8 +73,9 @@
             this.guna2GroupBox1.Controls.Add(this.guna2HtmlLabel3);
             this.guna2GroupBox1.Controls.Add(this.txtMaTK);
             this.guna2GroupBox1.Controls.Add(this.guna2HtmlLabel2);
-            this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GroupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2GroupBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;
             this.guna2GroupBox1.Location = new System.Drawing.Point(-1, 53);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
             this.guna2GroupBox1.Size = new System.Drawing.Size(1058, 275);
@@ -89,7 +94,7 @@
             this.txtTiemKiem.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTiemKiem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTiemKiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTiemKiem.Location = new System.Drawing.Point(840, 228);
+            this.txtTiemKiem.Location = new System.Drawing.Point(840, 218);
             this.txtTiemKiem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTiemKiem.Name = "txtTiemKiem";
             this.txtTiemKiem.PasswordChar = '\0';
@@ -100,13 +105,20 @@
             // 
             // btnTimKiem
             // 
+            this.btnTimKiem.BorderRadius = 20;
+            this.btnTimKiem.BorderThickness = 1;
+            this.btnTimKiem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTimKiem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnTimKiem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnTimKiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnTimKiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTimKiem.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnTimKiem.ForeColor = System.Drawing.Color.White;
-            this.btnTimKiem.Location = new System.Drawing.Point(653, 228);
+            this.btnTimKiem.FillColor = System.Drawing.Color.White;
+            this.btnTimKiem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimKiem.ForeColor = System.Drawing.Color.Black;
+            this.btnTimKiem.HoverState.FillColor = System.Drawing.Color.Crimson;
+            this.btnTimKiem.HoverState.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimKiem.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnTimKiem.Location = new System.Drawing.Point(653, 218);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(180, 45);
             this.btnTimKiem.TabIndex = 15;
@@ -115,13 +127,20 @@
             // 
             // btnXoa
             // 
+            this.btnXoa.BorderRadius = 20;
+            this.btnXoa.BorderThickness = 1;
+            this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnXoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnXoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnXoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Location = new System.Drawing.Point(459, 228);
+            this.btnXoa.FillColor = System.Drawing.Color.White;
+            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.ForeColor = System.Drawing.Color.Black;
+            this.btnXoa.HoverState.FillColor = System.Drawing.Color.Crimson;
+            this.btnXoa.HoverState.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnXoa.Location = new System.Drawing.Point(450, 218);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(180, 45);
             this.btnXoa.TabIndex = 14;
@@ -130,13 +149,20 @@
             // 
             // btnSua
             // 
+            this.btnSua.BorderRadius = 20;
+            this.btnSua.BorderThickness = 1;
+            this.btnSua.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSua.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSua.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSua.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSua.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSua.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnSua.ForeColor = System.Drawing.Color.White;
-            this.btnSua.Location = new System.Drawing.Point(233, 228);
+            this.btnSua.FillColor = System.Drawing.Color.White;
+            this.btnSua.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua.ForeColor = System.Drawing.Color.Black;
+            this.btnSua.HoverState.FillColor = System.Drawing.Color.Crimson;
+            this.btnSua.HoverState.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnSua.Location = new System.Drawing.Point(235, 218);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(180, 45);
             this.btnSua.TabIndex = 13;
@@ -145,13 +171,20 @@
             // 
             // btnThem
             // 
+            this.btnThem.BorderRadius = 20;
+            this.btnThem.BorderThickness = 1;
+            this.btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnThem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnThem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnThem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnThem.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.Location = new System.Drawing.Point(36, 228);
+            this.btnThem.FillColor = System.Drawing.Color.White;
+            this.btnThem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.ForeColor = System.Drawing.Color.Black;
+            this.btnThem.HoverState.FillColor = System.Drawing.Color.Crimson;
+            this.btnThem.HoverState.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnThem.Location = new System.Drawing.Point(38, 218);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(180, 45);
             this.btnThem.TabIndex = 12;
@@ -175,15 +208,16 @@
             this.txtMSV.PasswordChar = '\0';
             this.txtMSV.PlaceholderText = "Nhập Mã Sinh Viên";
             this.txtMSV.SelectedText = "";
-            this.txtMSV.Size = new System.Drawing.Size(262, 27);
+            this.txtMSV.Size = new System.Drawing.Size(262, 37);
             this.txtMSV.TabIndex = 11;
             // 
             // guna2HtmlLabel8
             // 
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel8.Location = new System.Drawing.Point(529, 144);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(101, 22);
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(160, 34);
             this.guna2HtmlLabel8.TabIndex = 10;
             this.guna2HtmlLabel8.Text = "Mã Sinh Viên:";
             // 
@@ -204,15 +238,16 @@
             this.txtMatKhau.PasswordChar = '\0';
             this.txtMatKhau.PlaceholderText = "Nhập Mật Khẩu";
             this.txtMatKhau.SelectedText = "";
-            this.txtMatKhau.Size = new System.Drawing.Size(262, 27);
+            this.txtMatKhau.Size = new System.Drawing.Size(262, 34);
             this.txtMatKhau.TabIndex = 9;
             // 
             // guna2HtmlLabel9
             // 
             this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel9.Location = new System.Drawing.Point(529, 60);
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(75, 22);
+            this.guna2HtmlLabel9.Size = new System.Drawing.Size(120, 34);
             this.guna2HtmlLabel9.TabIndex = 8;
             this.guna2HtmlLabel9.Text = "Mật Khẩu:";
             // 
@@ -227,21 +262,22 @@
             this.txtTenTK.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenTK.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTenTK.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTenTK.Location = new System.Drawing.Point(233, 139);
+            this.txtTenTK.Location = new System.Drawing.Point(192, 144);
             this.txtTenTK.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTenTK.Name = "txtTenTK";
             this.txtTenTK.PasswordChar = '\0';
             this.txtTenTK.PlaceholderText = "Nhập Tên Tài Khoản";
             this.txtTenTK.SelectedText = "";
-            this.txtTenTK.Size = new System.Drawing.Size(262, 27);
+            this.txtTenTK.Size = new System.Drawing.Size(262, 34);
             this.txtTenTK.TabIndex = 3;
             // 
             // guna2HtmlLabel3
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.Location = new System.Drawing.Point(53, 144);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(57, 22);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(89, 34);
             this.guna2HtmlLabel3.TabIndex = 2;
             this.guna2HtmlLabel3.Text = "Tên TK:";
             // 
@@ -256,30 +292,32 @@
             this.txtMaTK.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMaTK.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtMaTK.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMaTK.Location = new System.Drawing.Point(233, 60);
+            this.txtMaTK.Location = new System.Drawing.Point(192, 60);
             this.txtMaTK.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMaTK.Name = "txtMaTK";
             this.txtMaTK.PasswordChar = '\0';
             this.txtMaTK.PlaceholderText = "Nhập Mã Tài Khoản";
             this.txtMaTK.SelectedText = "";
-            this.txtMaTK.Size = new System.Drawing.Size(262, 27);
+            this.txtMaTK.Size = new System.Drawing.Size(262, 34);
             this.txtMaTK.TabIndex = 1;
             // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(53, 60);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(52, 22);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(83, 34);
             this.guna2HtmlLabel2.TabIndex = 0;
             this.guna2HtmlLabel2.Text = "Mã TK:";
             // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.AutoSize = false;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Lime;
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(70)))));
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(-1, 4);
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(-1, 1);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(1069, 52);
             this.guna2HtmlLabel1.TabIndex = 7;
@@ -312,6 +350,7 @@
             this.columnHeader10,
             this.columnHeader11});
             this.lsvHienThi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lsvHienThi.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lsvHienThi.FullRowSelect = true;
             this.lsvHienThi.GridLines = true;
             this.lsvHienThi.HideSelection = false;
@@ -346,6 +385,20 @@
             this.columnHeader11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader11.Width = 300;
             // 
+            // pickClose
+            // 
+            this.pickClose.BorderRadius = 20;
+            this.pickClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pickClose.Image = global::GUI.Properties.Resources.Back_2_2_icon__1_;
+            this.pickClose.ImageRotate = 0F;
+            this.pickClose.Location = new System.Drawing.Point(3, -3);
+            this.pickClose.Name = "pickClose";
+            this.pickClose.Size = new System.Drawing.Size(55, 57);
+            this.pickClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pickClose.TabIndex = 17;
+            this.pickClose.TabStop = false;
+            this.pickClose.Click += new System.EventHandler(this.pickClose_Click);
+            // 
             // FormQLTK
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -358,11 +411,13 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormQLTK";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormQLTK";
             this.Load += new System.EventHandler(this.FormQLTK_Load);
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pickClose)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -391,5 +446,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader9;
         private System.Windows.Forms.ColumnHeader columnHeader10;
         private System.Windows.Forms.ColumnHeader columnHeader11;
+        private Guna.UI2.WinForms.Guna2PictureBox pickClose;
     }
 }

@@ -135,5 +135,12 @@ namespace GUI
                 MessageBox.Show("Sửa Tài Khoản Không Thành Công. Hãy đảm bảo rằng mã sinh viên đó đã tồn tại trong csdl để có thể thêm tài khoản của bạn. Và không sửa mã TK");
             }
         }
+
+        private void pickClose_Click(object sender, EventArgs e)
+        {
+            Form_Quan_LyTV form_Quan_LyTV = new Form_Quan_LyTV();
+            this.Hide();
+            form_Quan_LyTV.ShowDialog();
+        }
     }
 }

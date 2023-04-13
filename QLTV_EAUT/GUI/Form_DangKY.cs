@@ -58,7 +58,9 @@ namespace GUI
 
         private void pickClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Form_Dang_Nhap dang_Nhap = new Form_Dang_Nhap();
+            this.Hide();
+            dang_Nhap.ShowDialog();
         }
 
         private void txtTenTaiKhoan_TextChanged(object sender, EventArgs e)
