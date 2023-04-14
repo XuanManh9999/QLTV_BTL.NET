@@ -121,10 +121,10 @@ namespace GUI
         {
             SqlCommand sqlCMD = new SqlCommand();
             sqlCMD.CommandType = CommandType.Text;
-            sqlCMD.CommandText = $"select MASV from TAIKHOAN where TAIKHOAN.TENTK = '{tenTK}'";
+            sqlCMD.CommandText = $"select MASV from TAIKHOAN where TAIKHOAN.TENTK = N'{tenTK}'";
             sqlCMD.Connection = CONNECT.chuoiKetNoi();
             SqlDataReader reader = sqlCMD.ExecuteReader();
-            if (reader.Read() ) { 
+            if (reader.Read() ) {
                 return reader.GetString(0);
             }
             return "err";
